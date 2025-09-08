@@ -97,13 +97,15 @@ body {
   width: 100%;
 }
 
-.staff_section{
+.images_section{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.staff_section img{
+.images_section img{
     /* width: 100%; */
     /* display: flex;
     justify-content: center; */

@@ -3,6 +3,8 @@ import '../styles/LandingPage.css'
 import ParticleJsBackground from "./components/ParticleJsBackground";
 import staff_image from '../assets/images/staff.png';
 import permissions from '../assets/images/permissions.png';
+import report_card from '../assets/images/report_card.png';
+import class_stream from '../assets/images/class_stream.png';
 
 const LandingPage = () => {
     return (
@@ -42,10 +44,10 @@ const LandingPage = () => {
                 </div>
             </section>
             {/* Extracts */}
-            <section className="staff_section">
+            <section className="images_section">
                 {/* <div className=""> */}
-                    <img src={permissions} alt="" />
-                    <img src={staff_image} alt="" />
+                <img src={permissions} alt="" />
+                <img src={staff_image} alt="" />
                 {/* </div> */}
             </section>
             {/* Roles Section */}
@@ -81,6 +83,14 @@ const LandingPage = () => {
                         </ul>
                     </div>
                 </div>
+            </section>
+
+            {/* Extracts */}
+            <section className="images_section">
+                {/* <div className=""> */}
+                <img src={report_card} alt="" />
+                <img src={class_stream} alt="" />
+                {/* </div> */}
             </section>
 
             {/* Testimonials */}
