@@ -1,9 +1,11 @@
 import React from "react";
 import '../styles/LandingPage.css'
+import ParticleJsBackground from "./components/ParticleJsBackground";
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
+        <ParticleJsBackground/>
       {/* Navbar */}
       <header className="navbar">
         <h1 className="logo">EduHub Ghana</h1>
