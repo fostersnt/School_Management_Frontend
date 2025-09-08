@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/LandingPage.css'
+import staff_image from '../assets/images/staff.png';
 
 const LandingPage = () => {
   return (
@@ -37,7 +38,12 @@ const LandingPage = () => {
           />
         </div>
       </section>
-
+      {/* Extracts */}
+      <section className="">
+        <div className="">
+          <img src={staff_image} alt="" />
+        </div>
+      </section>
       {/* Roles Section */}
       <section className="roles">
         <h3>Built for Every Role</h3>

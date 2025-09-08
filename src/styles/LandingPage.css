@@ -97,6 +97,18 @@ body {
   width: 100%;
 }
 
+.staff_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.staff_section img{
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center; */
+}
+
 /* Roles */
 .roles {
   text-align: center;
