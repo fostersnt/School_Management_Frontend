@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+a,
+div {
+  font-family: "Josefin Slab", serif;
+  font-style: normal;
+}
+
+span,
+p,
+div,
+li {
+  font-size: 1.5rem;
+}
