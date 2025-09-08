@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/LandingPage.css'
 import ParticleJsBackground from "./components/ParticleJsBackground";
+import analytics from '../assets/images/analytics.png';
 import staff_image from '../assets/images/staff.png';
 import permissions from '../assets/images/permissions.png';
 import report_card from '../assets/images/report_card.png';
@@ -38,17 +39,15 @@ const LandingPage = () => {
                 </div>
                 <div className="hero-image">
                     <img
-                        src="https://images.unsplash.com/photo-1577896851231-70ef18881754"
-                        alt="Classroom"
+                        src={analytics}
+                        alt="Analytics"
                     />
                 </div>
             </section>
             {/* Extracts */}
             <section className="images_section">
-                {/* <div className=""> */}
                 <img src={permissions} alt="" />
                 <img src={staff_image} alt="" />
-                {/* </div> */}
             </section>
             {/* Roles Section */}
             <section className="roles">
@@ -87,10 +86,8 @@ const LandingPage = () => {
 
             {/* Extracts */}
             <section className="images_section">
-                {/* <div className=""> */}
                 <img src={report_card} alt="" />
                 <img src={class_stream} alt="" />
-                {/* </div> */}
             </section>
 
             {/* Testimonials */}

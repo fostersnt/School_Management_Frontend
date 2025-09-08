@@ -34,10 +34,10 @@ const ParticleJsBackground = () => {
             },
         },
         particles: {
-            color: { value: "#00e5ff" },
+            color: { value: "#f4b400" },
             //   color: { value: "#ff5722" },
             links: {
-                color: "#00e5ff",
+                color: "#f4b400",
                 distance: 150,
                 enable: true,
             },
