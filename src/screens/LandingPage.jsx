@@ -11,6 +11,7 @@ import { NavLink } from "react-router-dom";
 const LandingPage = () => {
     return (
         <div className="landing-page">
+            <ParticleJsBackground />
             {/* Navbar */}
             <header className="navbar">
                 <h1 className="logo">EduHub Ghana</h1>
@@ -21,7 +22,6 @@ const LandingPage = () => {
                 </nav>
                 <button className="btn primary">Get Started</button>
             </header>
-            <ParticleJsBackground />
 
             {/* Hero Section */}
             <section className="hero">
