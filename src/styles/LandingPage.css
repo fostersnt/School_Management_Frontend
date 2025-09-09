@@ -63,7 +63,7 @@ body {
 
 .btn.secondary {
   /* background: #ffd580; */
-  background: #6441e9;
+  background: #ff5722;
   color: #fff;
   margin-left: 10px;
 }
@@ -83,7 +83,7 @@ body {
 } */
 
 .hero-text {
-  border: 1px solid #6441e9;
+  border: 1px solid #ff5722;
   max-width: 550px;
   background: #fff;
   padding: 20px;
@@ -118,11 +118,11 @@ body {
   /* padding: 20px; */
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border: 1px solid #6441e9;
+  border: 1px solid #ff5722;
 }
 
 .images_section {
-  border: 1px solid #6441e9;
+  border: 1px solid #ff5722;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +169,7 @@ body {
 }
 
 .role-card {
-  border: 1px solid #6441e9;
+  border: 1px solid #ff5722;
   background: #fff;
   /* border: 1px solid #e5e7eb; */
   padding: 30px 25px;
