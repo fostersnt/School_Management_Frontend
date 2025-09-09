@@ -10,7 +10,7 @@ span,
 p,
 li,
 a,
-div,button {
+div,button, input {
   font-family: "Josefin Slab", serif;
   font-style: normal;
 }
