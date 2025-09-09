@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='*' element={<NotFound />} />
         {/* Admin layout route below */}
         <Route path='admin' element={
-          <ProtectedRoute isAllowed={true}>
+          <ProtectedRoute isAllowed={false}>
             <AdminLayout />
           </ProtectedRoute>
         }>
