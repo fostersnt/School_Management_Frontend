@@ -16,9 +16,9 @@ const LandingPage = () => {
             <header className="navbar">
                 <h1 className="logo">EduHub Ghana</h1>
                 <nav className="nav-links">
-                    <NavLink to='/admin'>Features</NavLink>
-                    <NavLink to='/admin'>Pricing</NavLink>
-                    <NavLink to='/admin'>Contact</NavLink>
+                    <NavLink to='/admin' className='nav-link'>Features</NavLink>
+                    <NavLink to='/admin' className='nav-link'>Pricing</NavLink>
+                    <NavLink to='/admin' className='nav-link'>Contact</NavLink>
                 </nav>
                 <button className="btn primary">Get Started</button>
             </header>
