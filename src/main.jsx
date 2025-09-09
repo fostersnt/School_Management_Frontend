@@ -5,9 +5,13 @@ import App from './App.jsx'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AdminLayout from './screens/layouts/Admin.jsx'
 import Dashboard from './screens/admin/Dashboard.jsx'
-import ProtectedRoute from './security/RouteProtector.jsx'
+import AdminProtectedRoute from './security/AdminRouteProtector.jsx'
 import NotFound from './screens/NotFound.jsx'
 import LoginPage from './screens/LoginPage.jsx'
+import StaffLayout from './screens/layouts/Staff.jsx'
+import ParentLayout from './screens/layouts/Parent.jsx'
+import StaffProtectedRoute from './security/StaffRouteProtector.jsx'
+import ParentProtectedRoute from './security/ParentRouteProtector.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,11 +20,32 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='*' element={<NotFound />} />
-        {/* Admin layout route below */}
+
+        //! Admin layout routes below
         <Route path='admin' element={
-          <ProtectedRoute isAllowed={false}>
+          <AdminProtectedRoute>
             <AdminLayout />
-          </ProtectedRoute>
+          </AdminProtectedRoute>
+        }>
+          <Route index element={<Navigate to="dashboard" replace />} />
+          <Route path='dashboard' element={<Dashboard />} />
+        </Route>
+
+        //! Staff layout routes below
+        <Route path='staff' element={
+          <StaffProtectedRoute>
+            <StaffLayout />
+          </StaffProtectedRoute>
+        }>
+          <Route index element={<Navigate to="dashboard" replace />} />
+          <Route path='dashboard' element={<Dashboard />} />
+        </Route>
+
+        //! Staff layout routes below
+        <Route path='parent' element={
+          <ParentProtectedRoute>
+            <ParentLayout />
+          </ParentProtectedRoute>
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path='dashboard' element={<Dashboard />} />
