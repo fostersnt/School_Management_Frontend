@@ -74,7 +74,7 @@ body {
 } */
 
 .hero-text {
-  border: 3px dashed #ffd580;
+  border: 1px solid #f7e6c6;
   max-width: 550px;
   background: #fff;
   padding: 20px;
@@ -109,11 +109,11 @@ body {
   /* padding: 20px; */
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border: 3px solid #ffd580;
+  border: 1px solid #f7e6c6;
 }
 
 .images_section {
-  border: 2px dashed #ffd580;
+  border: 1px solid #f7e6c6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,7 +160,7 @@ body {
 }
 
 .role-card {
-  border: 3px dashed #ffd580;
+  border: 1px solid #f7e6c6;
   background: #fff;
   /* border: 1px solid #e5e7eb; */
   padding: 30px 25px;
