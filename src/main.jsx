@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AdminLayout from './screens/layouts/Admin.jsx'
-import Dashboard from './screens/admin/Dashboard.jsx'
 import AdminProtectedRoute from './security/AdminRouteProtector.jsx'
 import NotFound from './screens/NotFound.jsx'
 import LoginPage from './screens/LoginPage.jsx'
@@ -12,6 +11,9 @@ import StaffLayout from './screens/layouts/Staff.jsx'
 import ParentLayout from './screens/layouts/Parent.jsx'
 import StaffProtectedRoute from './security/StaffRouteProtector.jsx'
 import ParentProtectedRoute from './security/ParentRouteProtector.jsx'
+import AdminDashboard from './screens/dashboards/AdminDashboard.jsx'
+import ParentDashboard from './screens/dashboards/ParentDashboard.jsx'
+import StaffDashboard from './screens/dashboards/StaffDashboard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -28,7 +30,7 @@ createRoot(document.getElementById('root')).render(
           </AdminProtectedRoute>
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='dashboard' element={<AdminDashboard />} />
         </Route>
 
         //! Staff layout routes below
@@ -38,7 +40,7 @@ createRoot(document.getElementById('root')).render(
           </StaffProtectedRoute>
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='dashboard' element={<StaffDashboard />} />
         </Route>
 
         //! Staff layout routes below
@@ -48,7 +50,7 @@ createRoot(document.getElementById('root')).render(
           </ParentProtectedRoute>
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='dashboard' element={<ParentDashboard />} />
         </Route>
       </Routes>
     </BrowserRouter>
