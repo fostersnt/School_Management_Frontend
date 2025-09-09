@@ -6,6 +6,7 @@ import staff_image from '../assets/images/staff.png';
 import permissions from '../assets/images/permissions.png';
 import report_card from '../assets/images/report_card.png';
 import class_stream from '../assets/images/class_stream.png';
+import { NavLink } from "react-router-dom";
 
 const LandingPage = () => {
     return (
@@ -15,9 +16,9 @@ const LandingPage = () => {
             <header className="navbar">
                 <h1 className="logo">EduHub Ghana</h1>
                 <nav className="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
+                    <NavLink to='/admin'>Features</NavLink>
+                    <NavLink to='/admin'>Pricing</NavLink>
+                    <NavLink to='/admin'>Contact</NavLink>
                 </nav>
                 <button className="btn primary">Get Started</button>
             </header>
