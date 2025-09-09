@@ -26,17 +26,20 @@ const LandingPage = () => {
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-text">
-                    <span className="tag">Multi-Vendor School OS for Ghana</span>
-                    <h2>Manage Admissions, Grades, and Fees — All in One Place</h2>
-                    <p>
-                        Give administrators, teachers, parents and students a simple,
-                        reliable workspace for attendance, grading, report cards and mobile
-                        money payments.
-                    </p>
-                    <div className="hero-buttons">
-                        <button className="btn primary">Book a Demo</button>
-                        <button className="btn secondary">Explore Features</button>
+                    <div className="">
+                        <span className="tag">Multi-Vendor School OS for Ghana</span>
+                        <h2>Manage Admissions, Grades, and Fees — All in One Place</h2>
+                        <p>
+                            Give administrators, teachers, parents and students a simple,
+                            reliable workspace for attendance, grading, report cards and mobile
+                            money payments.
+                        </p>
+                        <div className="hero-buttons">
+                            <button className="btn primary">Book a Demo</button>
+                            <button className="btn secondary">Explore Features</button>
+                        </div>
                     </div>
+                    {/* <img src={staff_image} alt="" height={400} width={'100%'} /> */}
                 </div>
                 <div className="hero-image">
                     <img

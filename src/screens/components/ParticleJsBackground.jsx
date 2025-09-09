@@ -35,24 +35,24 @@ const ParticleJsBackground = () => {
             },
         },
         particles: {
-            color: { value: "#6441e9" },
+            color: { value: "#ff5722" },
             //   color: { value: "#ff5722" },
             links: {
-                color: "#6441e9",
+                color: "#ff5722",
                 distance: 150,
                 enable: true,
             },
-            move: { enable: true, speed: 5 },
-            number: { value: 100 },
-            size: { value: { min: 1, max: 5 } },
+            move: { enable: true, speed: 3 },
+            number: { value: 20 },
+            size: { value: { min: 1, max: 20 } },
         },
     };
 
     if (init) {
         return (
-            <div className="particles-background">
+            // <div className="particles-background">
                 <Particles id="tsparticles" options={options}/>
-            </div>
+            // </div>
         );
     }
 

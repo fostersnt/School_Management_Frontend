@@ -7,6 +7,9 @@ body {
 }
 
 .landing-page {
+  background: url('../assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
 }
 
@@ -212,7 +215,7 @@ body {
 
 /* Testimonials */
 .testimonials {
-  background: #6441e9;
+  background: #ff5722;
   padding: 60px 40px;
   text-align: center;
 }
