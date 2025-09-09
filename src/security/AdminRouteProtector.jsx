@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom";
 
 const AdminProtectedRoute = ({ children, redirectPath = '/login' }) => {
     //! Obtain login status from redux persist
-    const isAllowed = true; //! Get login status from redux persist
+    const isAllowed = false; //! Get login status from redux persist
     let user_role = 'admin'; //! Get the user role from redux persist
     let user_role_lower = user_role.toLocaleLowerCase();
     // let redirectPath = "/login";
