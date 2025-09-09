@@ -43,7 +43,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='dashboard' element={<StaffDashboard />} />
         </Route>
 
-        //! Staff layout routes below
+        //! Parent layout routes below
         <Route path='parent' element={
           <ParentProtectedRoute>
             <ParentLayout />

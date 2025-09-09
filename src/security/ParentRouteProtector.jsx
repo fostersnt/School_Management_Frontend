@@ -7,7 +7,7 @@ const ParentProtectedRoute = ({ children, redirectPath = '/login' }) => {
     let user_role_lower = user_role.toLocaleLowerCase();
     // let redirectPath = "/login";
 
-    if (isAllowed && user_role_lower == 'admin') {
+    if (isAllowed && user_role_lower == 'parent') {
         return children;
     } else {
         return <Navigate to={redirectPath} replace />;
