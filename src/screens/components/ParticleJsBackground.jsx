@@ -3,6 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 import { useEffect, useState } from "react";
+import '../../styles/ParticleJsBackground.css'
 
 const ParticleJsBackground = () => {
     const [init, setInit] = useState(false);
@@ -48,14 +49,11 @@ const ParticleJsBackground = () => {
     };
 
     if (init) {
-        return <Particles id="tsparticles" options={options} style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: -1
-        }} />;
+        return (
+            <div className="particles-background">
+                <Particles id="tsparticles" options={options}/>
+            </div>
+        );
     }
 
     return <></>;
