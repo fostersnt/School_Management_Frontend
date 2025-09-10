@@ -19,8 +19,13 @@ const LandingPage = () => {
                     <NavLink to='/admin' className='nav-link'>Features</NavLink>
                     <NavLink to='/admin' className='nav-link'>Pricing</NavLink>
                     <NavLink to='/admin' className='nav-link'>Contact</NavLink>
+                    <NavLink to='/login' className='nav-link'>
+                        <button className="login_btn">
+                            Login
+                        </button>
+                    </NavLink>
                 </nav>
-                <button className="btn primary">Get Started</button>
+                {/* <button className="btn primary">Get Started</button> */}
             </header>
 
             {/* Hero Section */}
