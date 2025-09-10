@@ -39,7 +39,7 @@ const AdminDashboard = () => {
     }
     return (
         <>
-            <DoughnutChart data_set={chart_data_set} />
+            <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
         </>
     );
 };
