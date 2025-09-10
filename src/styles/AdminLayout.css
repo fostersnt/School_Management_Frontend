@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 0px;
+    margin: 10px;
 }
 
 .side_bar{
@@ -18,8 +19,9 @@
     padding: 10px;
     /* min-height: 100%; */
     background-color: #E2E8F0;
-    /* margin-right: 10px; */
+    /* margin: 10px; */
     color: #F8FAFC;
+    border-radius: 20px;
 }
 
 .side_bar_menu .menu_item{
@@ -48,7 +50,7 @@
 .main{
     width: calc(100% - 320px);
     margin-left: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     padding: 0px;
     /* overflow-x: hidden; */
 }
@@ -61,6 +63,7 @@
     background-color: #E2E8F0;
     display: flex;
     justify-content: space-between;
+    border-radius: 20px;
 }
 
 .profile_image_container{
@@ -69,8 +72,8 @@
 }
 
 .profile_image{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 
