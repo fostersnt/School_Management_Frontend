@@ -23,9 +23,14 @@ const AdminLayout = () => {
             <div className="layout_container">
                 <div className="side_bar">
                     <div className="side_bar_menu">
+                        <div className="menu_item">
+                            <NavLink className='nav-link' to='/admin/dashboard'>Dashboard</NavLink>
+                        </div>
+                    </div>
+                    <div className="side_bar_menu">
                         <div className="menu_item" onClick={() => handleMenuClick(1)}>Management</div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/login'>Staff</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'>Staff</NavLink></li>
                             <li className="">Students</li>
                             {/* <li className=""></li> */}
                         </div>

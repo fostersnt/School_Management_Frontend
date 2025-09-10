@@ -14,6 +14,7 @@ import StudentProtectedRoute from './security/StudentRouteProtector.jsx'
 import AdminDashboard from './screens/dashboards/AdminDashboard.jsx'
 import StudentDashboard from './screens/dashboards/StudentDashboard.jsx'
 import StaffDashboard from './screens/dashboards/StaffDashboard.jsx'
+import AllStaff from './screens/pages/staff/AllStaff.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -31,6 +32,7 @@ createRoot(document.getElementById('root')).render(
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path='dashboard' element={<AdminDashboard />} />
+          <Route path='all-staff' element={<AllStaff />} />
         </Route>
 
         //! Staff layout routes below
