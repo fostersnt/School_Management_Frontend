@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import '../../styles/AdminLayout.css'
 const AdminLayout = () => {
 
@@ -21,16 +21,16 @@ const AdminLayout = () => {
             <div className="layout_container">
                 <div className="side_bar">
                     <div className="side_bar_menu">
-                        <span className="menu_item" onClick={() => handleMenuClick(1)}>Management</span>
-                        <div className={activeMenu === 1 ? 'display_item' : 'hide_item'}>
-                            <li className="">Staff</li>
+                        <div className="menu_item" onClick={() => handleMenuClick(1)}>Management</div>
+                        <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
+                            <li className=""><NavLink className='nav-link' to='/login'>Staff</NavLink></li>
                             <li className="">Students</li>
                             {/* <li className=""></li> */}
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <span className="menu_item" onClick={() => handleMenuClick(2)}>Academics</span>
-                        <div className={activeMenu === 2 ? 'display_item' : 'hide_item'}>
+                        <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
                             <li className="">Calendar</li>
                             <li className="">Classes</li>
                             <li className="">Subjects</li>

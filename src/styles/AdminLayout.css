@@ -1,7 +1,9 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: #0F172A;
 }
+/* Button color = #6366F1 */
 .layout_container{
     min-height: 100vh;
     max-width: 100vw;
@@ -15,8 +17,31 @@
     width: 300px;
     padding: 10px;
     /* min-height: 100%; */
-    background-color: aqua;
+    background-color: #E2E8F0;
     /* margin-right: 10px; */
+    color: #F8FAFC;
+}
+
+.side_bar_menu .menu_item{
+    color: #0F172A;
+}
+
+.menu_item{
+    /* border-bottom: 1px solid #1E293B; */
+    width: 100%;
+    /* padding-bottom: 10px; */
+    /* height: 40px; */
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+}
+
+.side_bar_menu{
+    margin-bottom: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #334155;
 }
 
 .main{
@@ -31,20 +56,22 @@
     margin-bottom: 10px;
     padding: 10px;
     height: 100px;
-    background-color: blueviolet;
+    background-color: #334155;
 }
 
 .content{
-    background-color: red;
+    background-color: #F8FAFC;
     /* height: 100%; */
     margin-bottom: 20px;
+    color: #E2E8F0;
 }
 
-.display_item{
+.display_sidebar_item{
     display: block;
+    /* background-color: #fff; */
 }
 
-.hide_item{
+.hide_sidebar_item{
     display: none;
 }
 
