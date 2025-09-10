@@ -41,7 +41,7 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
-                        <h3 className="">User profile goes here</h3>
+                        <span className="">User profile goes here</span>
                     </div>
                     <div className="content">
                         <Outlet />
