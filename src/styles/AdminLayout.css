@@ -40,6 +40,10 @@
     /* font-weight: bold; */
 }
 
+.grouped_items{
+    display: flex;
+}
+
 .icon{
     margin-right: 10px;
 }

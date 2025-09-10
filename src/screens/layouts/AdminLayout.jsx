@@ -4,6 +4,7 @@ import '../../styles/AdminLayout.css'
 import profile_image from '../../assets/images/bg.jpg';
 import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/fa';
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
+import { MdChecklist, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
 
 const AdminLayout = () => {
 
@@ -26,11 +27,19 @@ const AdminLayout = () => {
                 <div className="side_bar">
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaGauge className='icon' size={20}/> Dashboard</NavLink>
+                            <div className="grouped_items">
+                                <MdSpaceDashboard className='icon' size={20} color={'#4F46E5'} />
+                                <NavLink className='nav-link' to='/admin/dashboard'>Dashboard</NavLink>
+                            </div>
                         </div>
                     </div>
                     <div className="side_bar_menu">
-                        <div className="menu_item" onClick={() => handleMenuClick(1)}><FaListCheck className='icon' size={20}/>Administration</div>
+                        <div className="menu_item" onClick={() => handleMenuClick(1)}>
+                            <div className="grouped_item">
+                                <MdChecklist className='icon' size={20} />
+                                <span className="">Administration</span>
+                            </div>
+                        </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'>Staff</NavLink></li>
                             <li className="">Students</li>
@@ -38,7 +47,10 @@ const AdminLayout = () => {
                         </div>
                     </div>
                     <div className="side_bar_menu">
-                        <span className="menu_item" onClick={() => handleMenuClick(2)}><FaSchool className='icon' size={20}/>Academics</span>
+                        <div className="grouped_item menu_item">
+                            <MdSchool className='icon' size={20} />
+                            <span className="" onClick={() => handleMenuClick(2)}>Academics</span>
+                        </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
                             <li className="">Calendar</li>
                             <li className="">Classes</li>
@@ -54,12 +66,12 @@ const AdminLayout = () => {
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaCreditCard className='icon' size={20}/>Payments/Fees</NavLink>
+                            <NavLink className='nav-link' to='/admin/dashboard'><FaCreditCard className='icon' size={20} />Payments/Fees</NavLink>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaBullhorn className='icon' size={20}/>Announcements</NavLink>
+                            <NavLink className='nav-link' to='/admin/dashboard'><FaBullhorn className='icon' size={20} />Announcements</NavLink>
                         </div>
                     </div>
                 </div>
