@@ -4,7 +4,7 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title, SubTitle);
 
-const DoughnutChart = ({ data_set, chart_width, chart_height }) => {
+const DoughnutChart = ({ data_set, chart_width, chart_height, chart_title, chart_sub_title }) => {
 
     return (
         <div className="chart_container">
@@ -14,13 +14,13 @@ const DoughnutChart = ({ data_set, chart_width, chart_height }) => {
                 plugins: {
                     title: {
                         display: true,
-                        text: "User Growth by Month",   // main title
+                        text: chart_title,   // main title
                         font: { size: 18, weight: "bold" },
                         color: "#333"
                     },
                     subtitle: {
                         display: true,
-                        text: "This chart shows users added in Jun–Aug", // description
+                        text: chart_sub_title, // description
                         font: { size: 14 },
                         color: "#666",
                         padding: { top: 10, bottom: 20 }

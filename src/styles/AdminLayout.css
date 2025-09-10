@@ -12,6 +12,7 @@
     justify-content: flex-start;
     padding: 0px;
     /* margin: 10px; */
+    overflow-x: hidden;
 }
 
 .side_bar{
