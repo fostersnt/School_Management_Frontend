@@ -4,7 +4,7 @@ import '../../styles/AdminLayout.css'
 import profile_image from '../../assets/images/bg.jpg';
 import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/fa';
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
-import { MdChecklist, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
+import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
 
 const AdminLayout = () => {
 
@@ -35,7 +35,7 @@ const AdminLayout = () => {
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item" onClick={() => handleMenuClick(1)}>
-                            <div className="grouped_item">
+                            <div className="grouped_items">
                                 <MdChecklist className='icon' size={20} />
                                 <span className="">Administration</span>
                             </div>
@@ -47,9 +47,11 @@ const AdminLayout = () => {
                         </div>
                     </div>
                     <div className="side_bar_menu">
-                        <div className="grouped_item menu_item">
-                            <MdSchool className='icon' size={20} />
-                            <span className="" onClick={() => handleMenuClick(2)}>Academics</span>
+                        <div className="menu_item">
+                            <div className="grouped_items">
+                                <MdSchool className='icon' size={20} />
+                                <span className="" onClick={() => handleMenuClick(2)}>Academics</span>
+                            </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
                             <li className="">Calendar</li>
@@ -61,12 +63,18 @@ const AdminLayout = () => {
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaShieldHalved className='icon' size={20} /> Roles & Permissions</NavLink>
+                            <div className="grouped_items">
+                                <FaShieldHalved className='icon' size={20} />
+                                <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
+                            </div>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaCreditCard className='icon' size={20} />Payments/Fees</NavLink>
+                            <div className="grouped_items">
+                                <MdCreditCard className='icon' size={20} />
+                                <NavLink className='nav-link' to='/admin/dashboard'>Payments/Fees</NavLink>
+                            </div>
                         </div>
                     </div>
                     <div className="side_bar_menu">
