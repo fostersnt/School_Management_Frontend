@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import '../../styles/AdminLayout.css'
+import profile_image from '../../assets/images/bg.jpg';
+
 const AdminLayout = () => {
 
     let [activeMenu, setActiveMenu] = useState(0);
@@ -41,7 +43,10 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
-                        <span className="">User profile goes here</span>
+                        <span className="">Welcome, Foster Asante</span>
+                        <div className="profile_image_container">
+                            <img className='profile_image' src={profile_image} alt="" />
+                        </div>
                     </div>
                     <div className="content">
                         <Outlet />

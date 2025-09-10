@@ -50,6 +50,7 @@
     margin-left: 10px;
     margin-right: 10px;
     padding: 0px;
+    /* overflow-x: hidden; */
 }
 
 .top_header{
@@ -58,6 +59,19 @@
     padding: 10px;
     height: 100px;
     background-color: #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_image_container{
+    display: flex;
+    align-items: center;
+}
+
+.profile_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .content{
@@ -78,5 +92,6 @@
 
 li{
     list-style-type: none;
+    margin-top: 10px;
     margin-left: 20px;
 }
