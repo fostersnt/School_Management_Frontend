@@ -16,9 +16,10 @@
 }
 
 .side_bar{
+    padding-top: 30px;
     width: 300px;
     /* width: 12%; */
-    padding: 10px;
+    padding-left: 10px;
     /* min-height: 100%; */
     background-color: #f0fff9;
     /* margin: 10px; */
