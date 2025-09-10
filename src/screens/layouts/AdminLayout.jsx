@@ -62,12 +62,12 @@ const AdminLayout = () => {
                     </div>
                 </div>
                 <div className="main">
-                    {/* <div className="top_header">
+                    <div className="top_header">
                         <span className="">Welcome, Foster Asante</span>
                         <div className="profile_image_container">
                             <img className='profile_image' src={profile_image} alt="" />
                         </div>
-                    </div> */}
+                    </div>
                     <div className="content">
                         <Outlet />
                         <Outlet />
