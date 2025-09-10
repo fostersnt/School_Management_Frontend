@@ -79,7 +79,10 @@ const AdminLayout = () => {
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
-                            <NavLink className='nav-link' to='/admin/dashboard'><FaBullhorn className='icon' size={20} />Announcements</NavLink>
+                            <div className="grouped_items">
+                                <FaBullhorn className='icon' size={20} />
+                                <NavLink className='nav-link' to='/admin/dashboard'>Announcements</NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>
