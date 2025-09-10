@@ -1,0 +1,23 @@
+.custom-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+  box-shadow: 0 4px 10px #ff5722;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
+.custom-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 8px;
+}
+
+.custom-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722; /* indigo-600 */
+}

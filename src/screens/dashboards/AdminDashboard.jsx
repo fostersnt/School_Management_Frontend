@@ -1,5 +1,6 @@
 import '../../styles/AdminDashboard.css';
 import BarChart from '../components/BarChart';
+import CustomCard from '../components/CustomCard';
 import DoughnutChart from '../components/DoughnutChart';
 
 const AdminDashboard = () => {
@@ -40,6 +41,12 @@ const AdminDashboard = () => {
     }
     return (
         <>
+        <div className="cards_container">
+            <CustomCard title="School Fees" amount={2000}/>
+            <CustomCard title="School Fees" amount={2000}/>
+            <CustomCard title="School Fees" amount={2000}/>
+            <CustomCard title="School Fees" amount={2000}/>
+        </div>
             <div className='container'>
                 <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} chart_title={'User data'} chart_sub_title={'A visual representation of users'} />
                 <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
