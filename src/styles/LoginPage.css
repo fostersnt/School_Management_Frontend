@@ -46,13 +46,13 @@
 }
 
 .login-input:focus {
-  border: 1px solid #ff5722;
-  box-shadow: 0 0 6px #ff5722;
+  border: 1px solid #ff91a9;
+  box-shadow: 0 0 6px #ff91a9;
 }
 
 /* Button */
 .login-button {
-  background: #ff5722;
+  background: #ec1846;
   color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
@@ -64,7 +64,7 @@
 }
 
 .login-button:hover {
-  background: #eb3701;
+  background: #ec1846;
   transform: translateY(-2px);
 }
 
@@ -76,14 +76,14 @@
 }
 
 .login-link {
-  color: #ff5722;
+  color: #ec1846;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .login-link:hover {
-  color: #eb3701;
+  color: #ec1846;
   text-decoration: underline;
 }
 
