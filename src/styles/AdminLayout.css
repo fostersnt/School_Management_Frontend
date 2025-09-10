@@ -11,14 +11,14 @@
     display: flex;
     justify-content: flex-start;
     padding: 0px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .side_bar{
     width: 12%;
     padding: 10px;
     /* min-height: 100%; */
-    background-color: #E2E8F0;
+    background-color: #f0fff9;
     /* margin: 10px; */
     color: #F8FAFC;
     border-radius: 20px;
@@ -53,6 +53,7 @@
     /* margin-right: 10px; */
     padding: 0px;
     /* overflow-x: hidden; */
+    background-color: #f7fbfa;
 }
 
 .top_header{
