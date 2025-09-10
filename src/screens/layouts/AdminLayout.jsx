@@ -1,0 +1,48 @@
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
+const AdminLayout = () => {
+
+    let [activeMenu, setActiveMenu] = useState(0);
+
+    const handleMenuClick = (value) => {
+        let final_value = 0;
+        if (activeMenu == value) {
+            final_value = 0;
+        } else if (activeMenu != value) {
+            final_value = value;
+        }
+        // const final_value = activeMenu == 0 ? value : 0;
+        setActiveMenu(final_value);
+    }
+
+    return (
+        <>
+            <div className="layout_container">
+                <div className="side_bar">
+                    <div className="side_bar_menu">
+                        <span className="menu_item" onClick={() => handleMenuClick(1)}>Management</span>
+                        <div className={activeMenu === 1 ? 'display_item' : 'hide_item'}>
+                            <li className="">Staff</li>
+                            <li className="">Students</li>
+                            {/* <li className=""></li> */}
+                        </div>
+                    </div>
+                    <div className="side_bar_menu">
+                        <span className="menu_item" onClick={() => handleMenuClick(2)}>Academics</span>
+                        <div className={activeMenu === 2 ? 'display_item' : 'hide_item'}>
+                            <li className="">Calendar</li>
+                            <li className="">Classes</li>
+                            <li className="">Subjects</li>
+                            <li className="">Time-Table</li>
+                            {/* <li className=""></li> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Outlet />
+        </>
+    );
+};
+
+export default AdminLayout;

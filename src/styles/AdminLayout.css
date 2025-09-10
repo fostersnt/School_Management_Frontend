@@ -1,0 +1,17 @@
+.layout_container{
+    min-height: 100vh;
+    background-color: red;
+}
+
+.display_item{
+    display: block;
+}
+
+.hide_item{
+    display: none;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 20px;
+}

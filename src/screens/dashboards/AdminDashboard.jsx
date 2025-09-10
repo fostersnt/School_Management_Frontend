@@ -1,10 +1,10 @@
-import React from 'react';
+import '../../styles/AdminDashboard.css';
 
-const AdminDashboard =() => {
+const AdminDashboard = () => {
 
     return (
         <>
-        <h1 className="">Here is the ADMIN analytics page</h1>
+            <h1 className="">Here is the Admin Dashboard</h1>
         </>
     );
 };
