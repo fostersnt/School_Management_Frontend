@@ -32,9 +32,10 @@
 
 /* Message */
 .notfound-message {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   color: #f3f3f3;
+  font-weight: bold;
 }
 
 /* Button */
