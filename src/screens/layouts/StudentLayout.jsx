@@ -5,7 +5,7 @@ const StudentLayout =() => {
 
     return (
         <>
-        <h1 className="">This is the Parent layout</h1>
+        <h1 className="">This is the Student layout</h1>
         <Outlet/>
         </>
     );

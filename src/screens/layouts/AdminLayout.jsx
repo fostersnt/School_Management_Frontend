@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-
+import '../../styles/AdminLayout.css'
 const AdminLayout = () => {
 
     let [activeMenu, setActiveMenu] = useState(0);
@@ -39,8 +39,16 @@ const AdminLayout = () => {
                         </div>
                     </div>
                 </div>
+                <div className="main">
+                    <div className="top_header">
+                        <h3 className="">User profile goes here</h3>
+                    </div>
+                    <div className="content">
+                        <Outlet />
+                    </div>
+                </div>
+
             </div>
-            <Outlet />
         </>
     );
 };
