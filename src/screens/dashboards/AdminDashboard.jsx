@@ -7,7 +7,7 @@ const AdminDashboard = () => {
         datasets: [
             {
                 id: 1,
-                label: 'AAA',
+                label: 'This is user data',
                 data: [5, 6, 7],
                 backgroundColor: [
                     'rgba(255, 99, 132, 1)',
@@ -39,7 +39,16 @@ const AdminDashboard = () => {
     }
     return (
         <>
-            <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+            <div className='container'>
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+            </div>
+            <div className='container'>
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+            </div>
         </>
     );
 };
