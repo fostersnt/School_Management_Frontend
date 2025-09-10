@@ -44,7 +44,7 @@ createRoot(document.getElementById('root')).render(
         </Route>
 
         //! Student layout routes below
-        <Route path='parent' element={
+        <Route path='student' element={
           <StudentProtectedRoute>
             <StudentLayout />
           </StudentProtectedRoute>
