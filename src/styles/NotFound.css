@@ -13,7 +13,7 @@
 
 /* Content box */
 .notfound-content {
-  background: #ff91a9;
+  background: #ec1846;
   padding: 3rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -27,7 +27,7 @@
   font-weight: 800;
   margin-bottom: 0.5rem;
   color: #fff;
-  text-shadow: 2px 4px 10px #ff91a9;
+  text-shadow: 2px 4px 10px #ec1846;
 }
 
 /* Message */
@@ -43,7 +43,7 @@
   display: inline-block;
   padding: 0.8rem 2rem;
   background: #fff;
-  color: #ff91a9;
+  color: #ec1846;
   font-weight: 600;
   border-radius: 12px;
   text-decoration: none;
