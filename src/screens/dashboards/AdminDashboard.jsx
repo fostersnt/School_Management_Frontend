@@ -43,15 +43,17 @@ const AdminDashboard = () => {
             <div className='container'>
                 <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} chart_title={'User data'} chart_sub_title={'A visual representation of users'} />
                 <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
-                <DoughnutChart data_set={chart_data_set} chart_width={300} chart_height={300} />
+                <BarChart chart_width={300} chart_height={300}/>
+                <BarChart chart_width={300} chart_height={300}/>
+                <BarChart chart_width={300} chart_height={300}/>
             </div>
-            <div className='container'>
+            {/* <div className='container'>
                 <BarChart/>
                 <BarChart/>
                 <BarChart/>
                 <BarChart/>
                 <BarChart/>
-            </div>
+            </div> */}
         </>
     );
 };

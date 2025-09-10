@@ -38,7 +38,7 @@ const BarChart = ({ data_set, chart_width, chart_height, chart_title, chart_sub_
   };
 
   const options = {
-    responsive: true,
+    responsive: false,
     maintainAspectRatio: false,
     plugins: {
       title: {
@@ -67,7 +67,7 @@ const BarChart = ({ data_set, chart_width, chart_height, chart_title, chart_sub_
 
   return (
     <div>
-      <Bar data={data} options={options} />
+      <Bar data={data} options={options} width={chart_width} height={chart_height} />
     </div>
   );
 };
