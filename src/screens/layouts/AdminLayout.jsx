@@ -72,35 +72,6 @@ const AdminLayout = () => {
                     </div>
                     <div className="content">
                         <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
-                        <Outlet />
                     </div>
                 </div>
 
