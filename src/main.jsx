@@ -8,11 +8,11 @@ import AdminProtectedRoute from './security/AdminRouteProtector.jsx'
 import NotFound from './screens/NotFound.jsx'
 import LoginPage from './screens/LoginPage.jsx'
 import StaffLayout from './screens/layouts/Staff.jsx'
-import ParentLayout from './screens/layouts/Parent.jsx'
+import StudentLayout from './screens/layouts/Student.jsx'
 import StaffProtectedRoute from './security/StaffRouteProtector.jsx'
-import ParentProtectedRoute from './security/ParentRouteProtector.jsx'
+import StudentProtectedRoute from './security/StudentRouteProtector.jsx'
 import AdminDashboard from './screens/dashboards/AdminDashboard.jsx'
-import ParentDashboard from './screens/dashboards/ParentDashboard.jsx'
+import StudentDashboard from './screens/dashboards/StudentDashboard.jsx'
 import StaffDashboard from './screens/dashboards/StaffDashboard.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -43,14 +43,14 @@ createRoot(document.getElementById('root')).render(
           <Route path='dashboard' element={<StaffDashboard />} />
         </Route>
 
-        //! Parent layout routes below
+        //! Student layout routes below
         <Route path='parent' element={
-          <ParentProtectedRoute>
-            <ParentLayout />
-          </ParentProtectedRoute>
+          <StudentProtectedRoute>
+            <StudentLayout />
+          </StudentProtectedRoute>
         }>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path='dashboard' element={<ParentDashboard />} />
+          <Route path='dashboard' element={<StudentDashboard />} />
         </Route>
       </Routes>
     </BrowserRouter>

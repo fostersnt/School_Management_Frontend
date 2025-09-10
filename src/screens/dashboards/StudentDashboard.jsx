@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ParentDashboard =() => {
+const StudentDashboard =() => {
 
     return (
         <>
@@ -9,4 +9,4 @@ const ParentDashboard =() => {
     );
 };
 
-export default ParentDashboard;
+export default StudentDashboard;

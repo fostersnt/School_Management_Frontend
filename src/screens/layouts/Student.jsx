@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-const ParentLayout =() => {
+const StudentLayout =() => {
 
     return (
         <>
@@ -11,4 +11,4 @@ const ParentLayout =() => {
     );
 };
 
-export default ParentLayout;
+export default StudentLayout;

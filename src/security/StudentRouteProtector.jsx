@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-const ParentProtectedRoute = ({ children, redirectPath = '/login' }) => {
+const StudentProtectedRoute = ({ children, redirectPath = '/login' }) => {
     //! Obtain login status from redux persist
     const isAllowed = false; //! Get login status from redux persist
     let user_role = 'parent'; //! Get the user role from redux persist
@@ -14,4 +14,4 @@ const ParentProtectedRoute = ({ children, redirectPath = '/login' }) => {
     }
 };
 
-export default ParentProtectedRoute;
+export default StudentProtectedRoute;
