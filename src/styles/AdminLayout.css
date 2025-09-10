@@ -15,7 +15,8 @@
 }
 
 .side_bar{
-    width: 12%;
+    width: 300px;
+    /* width: 12%; */
     padding: 10px;
     /* min-height: 100%; */
     background-color: #f0fff9;
@@ -38,6 +39,10 @@
     font-weight: bold;
 }
 
+.icon{
+    margin-right: 10px;
+}
+
 .side_bar_menu{
     margin-bottom: 20px;
 }
@@ -45,10 +50,12 @@
 .nav-link{
     text-decoration: none;
     color: #334155;
+    display: flex;
+    align-items: center;
 }
 
 .main{
-    width: calc(100% - 12% + 20px);
+    width: calc(100% - 300px + 20px);
     /* margin-left: 10px; */
     /* margin-right: 10px; */
     /* padding: 0px; */
