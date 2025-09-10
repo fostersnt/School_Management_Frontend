@@ -1,10 +1,12 @@
 import '../../styles/AdminDashboard.css';
+import DoughnutChart from '../components/DoughnutChart';
 
 const AdminDashboard = () => {
 
     return (
         <>
-            <h1 className="container">Here is the Admin Dashboard</h1>
+            <DoughnutChart />
+            {/* <h1 className="container">Here is the Admin Dashboard</h1> */}
         </>
     );
 };
