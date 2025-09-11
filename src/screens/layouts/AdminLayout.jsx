@@ -5,6 +5,10 @@ import profile_image from '../../assets/images/bg.jpg';
 import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/fa';
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
 import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
+import { AiFillDashboard } from 'react-icons/ai';
+import { TbDashboard } from 'react-icons/tb';
+import { HiOutlineAcademicCap } from 'react-icons/hi';
+import { FiShield } from 'react-icons/fi';
 
 const AdminLayout = () => {
 
@@ -28,7 +32,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <MdSpaceDashboard className='icon' size={20} color={'#4F46E5'} />
+                                <TbDashboard className='icon' size={20} color={'#4F46E5'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Dashboard</NavLink>
                             </div>
                         </div>
@@ -49,7 +53,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <MdSchool className='icon' size={20} />
+                                <HiOutlineAcademicCap className='icon' size={20} />
                                 <span className="" onClick={() => handleMenuClick(2)}>Academics</span>
                             </div>
                         </div>
@@ -64,7 +68,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FaShieldHalved className='icon' size={20} />
+                                <FiShield className='icon' size={20} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
                             </div>
                         </div>
