@@ -41,7 +41,7 @@ export default function CustomTable() {
       <div className="table-top-actions">
         <div className="actions-left">
           <button className="btn">Export CSV</button>
-          <button className="btn secondary">Add new</button>
+          <button className="btn">Add New</button>
         </div>
         <div className="search-box">
           <input
