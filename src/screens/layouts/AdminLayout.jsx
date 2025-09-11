@@ -9,6 +9,7 @@ import { AiFillDashboard } from 'react-icons/ai';
 import { TbDashboard } from 'react-icons/tb';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import { FiArrowRight, FiMinus, FiPlus, FiShield } from 'react-icons/fi';
+import CustomFooter from '../components/CustomFooter';
 
 const AdminLayout = () => {
 
@@ -100,8 +101,8 @@ const AdminLayout = () => {
                     <div className="content">
                         <Outlet />
                     </div>
+                <CustomFooter/>
                 </div>
-
             </div>
         </>
     );
