@@ -8,7 +8,7 @@ import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, Md
 import { AiFillDashboard } from 'react-icons/ai';
 import { TbDashboard } from 'react-icons/tb';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
-import { FiShield } from 'react-icons/fi';
+import { FiArrowRight, FiMinus, FiPlus, FiShield } from 'react-icons/fi';
 
 const AdminLayout = () => {
 
@@ -45,8 +45,8 @@ const AdminLayout = () => {
                             </div>
                         </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'>Staff</NavLink></li>
-                            <li className="">Students</li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Staff</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Students</NavLink></li>
                             {/* <li className=""></li> */}
                         </div>
                     </div>
@@ -58,10 +58,10 @@ const AdminLayout = () => {
                             </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className="">Calendar</li>
-                            <li className="">Classes</li>
-                            <li className="">Subjects</li>
-                            <li className="">Time-Table</li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Calendar</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Classes</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Subjects</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Time-Table</NavLink></li>
                             {/* <li className=""></li> */}
                         </div>
                     </div>
