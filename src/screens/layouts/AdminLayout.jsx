@@ -68,7 +68,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FiShield className='icon' size={20} />
+                                <FiShield className='icon' size={20}/>
                                 <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
                             </div>
                         </div>
