@@ -1,5 +1,5 @@
 .table-card {
-  max-width: 95%;
+  /* max-width: 95%; */
   margin: 24px auto;
   background: #ffffff;
   border-radius: 12px;
@@ -83,7 +83,7 @@
   font-weight: 600;
   font-size: 20px;
   color: #4a5568;
-  background: #eef0f3;
+  /* background: #eef0f3; */
   border-bottom: 1px solid #e1e4e8;
 }
 
@@ -94,9 +94,9 @@
   font-size: 20px;
 }
 
-.nice-table tbody tr:nth-child(even) {
+/* .nice-table tbody tr:nth-child(even) {
   background: rgba(222, 226, 231, 0.5);
-}
+} */
 
 .nice-table tbody tr:hover {
   background: rgba(122, 136, 153, 0.06);
