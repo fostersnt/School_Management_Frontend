@@ -28,7 +28,6 @@
   font-size: 13px;
 }
 
-/* Actions + Search */
 .table-top-actions {
   display: flex;
   justify-content: space-between;
@@ -41,14 +40,6 @@
   gap: 10px;
 }
 
-/* .search-box input {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #d0d3d8;
-  font-size: 14px;
-  width: 200px;
-} */
-
 .search-box input {
   padding: 8px 12px;
   border-radius: 8px;
@@ -60,12 +51,11 @@
 
 .search-box input:focus {
   outline: none;
-  border-color: #4a67d6;         /* Accent color */
+  border-color: #4a67d6;
   box-shadow: 0 0 0 3px rgba(74, 103, 214, 0.2);
   background: #ffffff;
 }
 
-/* Table */
 .table-wrap {
   overflow-x: auto;
 }
