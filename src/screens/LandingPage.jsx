@@ -21,7 +21,7 @@ const LandingPage = () => {
                     <NavLink to='/admin' className='nav-link'>Contact</NavLink>
                     <NavLink to='/login' className='nav-link'>
                         <button className="login_btn">
-                            Login
+                            Login Name
                         </button>
                     </NavLink>
                 </nav>
