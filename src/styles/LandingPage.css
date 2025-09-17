@@ -9,6 +9,7 @@ body {
 .landing-page {
   background: url('../assets/images/students_bg.png');
   /* background: url('../assets/images/bg.jpg'); */
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
