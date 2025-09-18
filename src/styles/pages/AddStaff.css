@@ -42,6 +42,10 @@
 .form-card{
   width: 50%;
   flex: 1;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .two-cols{
   width: calc(100% - 10px);
