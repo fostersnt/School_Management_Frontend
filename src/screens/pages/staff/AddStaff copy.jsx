@@ -43,14 +43,14 @@ const AddStaff = () => {
         {/* Personal Info */}
         <section className="form-card">
           <h4>Personal Information</h4>
-          <div className="two-cols">
+          {/* <div className="two-cols"> */}
             <input type="text" placeholder="e.g. Ama Boateng" />
             <input type="text" placeholder="Auto or enter manually" />
-          </div>
-          <div className="two-cols">
+          {/* </div> */}
+          {/* <div className="two-cols"> */}
             <input type="email" placeholder="name@school.edu" />
             <input type="text" placeholder="e.g. 024 123 4567" />
-          </div>
+          {/* </div> */}
           <input type="text" placeholder="Residential address" />
           <input type="text" placeholder="Name & phone" />
         </section>
