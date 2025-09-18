@@ -16,7 +16,7 @@ span,
 p,
 li,
 a,
-div,button, input {
+div,button, input, select {
   font-family: "Josefin Slab", serif;
   font-style: normal;
 }
@@ -87,10 +87,6 @@ body::-webkit-scrollbar {
 .sys-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(150, 150, 150, 0.2);
-}
-
-.sys-option{
-  color: #0F172A;
 }
 
 .sys-button-colored{
