@@ -16,8 +16,8 @@ const AddStaff = () => {
         <div className="form-header">
           <h2>Create New Staff Profile</h2>
           <div>
-            <button className="btn-reset">Reset</button>
-            <button className="btn-save">Save</button>
+            <button className="sys-button">Reset</button>
+            <button className="sys-button-colored">Save</button>
           </div>
         </div>
 
