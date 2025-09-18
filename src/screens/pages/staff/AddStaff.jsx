@@ -72,7 +72,8 @@ const AddStaff = () => {
             <p className="note">PNG or JPG, max 2MB</p>
           </div>
         </section>
-
+      </div>
+      <div className="form-body">
         {/* Employment */}
         <section className="form-card">
           <h4>Employment Details</h4>
@@ -80,17 +81,19 @@ const AddStaff = () => {
             <input type="text" placeholder="e.g. Mathematics" />
             <input type="text" placeholder="e.g. Teacher, Bursar" />
           </div>
-          <select>
-            <option>Active</option>
-            <option>On Leave</option>
-          </select>
           <div className="two-cols">
             <input type="date" placeholder="DD/MM/YYYY" />
             <select>
               <option>Select supervisor</option>
             </select>
           </div>
-          <input type="text" placeholder="Assign classes/streams" />
+          <div className="two-cols">
+            <input type="text" placeholder="Assign classes/streams" />
+            <select>
+              <option>Active</option>
+              <option>On Leave</option>
+            </select>
+          </div>
         </section>
 
         {/* Account Access */}
@@ -113,7 +116,8 @@ const AddStaff = () => {
           <button className="btn-auto">Auto-generate</button>
           <p className="note">Send welcome email with login instructions.</p>
         </section>
-
+      </div>
+      <div className="form-body">
         {/* Permissions */}
         <section className="full-width">
           <h4>Permissions Quick Assign</h4>

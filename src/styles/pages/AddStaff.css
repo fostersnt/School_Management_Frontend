@@ -39,13 +39,24 @@
   margin: 5px;
   cursor: pointer;
 }
+
+.form-body{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-card{
   width: 50%;
   flex: 1;
   border: 1px solid #ddd;
   padding: 16px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 10px;
+}
+.form-card h4{
+  color: #5f6061;
+  margin: 5px;
 }
 .two-cols{
   width: calc(100% - 10px);
