@@ -16,7 +16,7 @@ const AddStaff = () => {
         <div className="form-header">
           <h2>Create New Staff Profile</h2>
           <div>
-            <button className="sys-button">Reset</button>
+            <button className="sys-button-grey">Reset</button>
             <button className="sys-button-colored">Save</button>
           </div>
         </div>
@@ -128,27 +128,27 @@ const AddStaff = () => {
               <span>Teachers</span>
               <span className="tag standard">Standard</span>
               <span>Gradebook, attendance, announcements</span>
-              <button className="btn-apply">Apply</button>
+              <button className="sys-button-colored">Apply</button>
             </div>
             <div className="permission-row">
               <span>Bursars</span>
               <span className="tag finance">Finance</span>
               <span>Billing, payments, reconciliation</span>
-              <button className="btn-apply">Apply</button>
+              <button className="sys-button-colored">Apply</button>
             </div>
             <div className="permission-row">
               <span>Custom</span>
               <span className="tag select">Select...</span>
               <span>Choose specific permissions</span>
-              <button className="btn-apply">Manage</button>
+              <button className="sys-button-colored">Manage</button>
             </div>
           </section>
         </div>
 
         {/* Footer Buttons */}
         <div className="form-footer">
-          <button className="btn-cancel">Cancel</button>
-          <button className="btn-save">Save Staff</button>
+          <button className="sys-button-grey">Cancel</button>
+          <button className="sys-button-colored">Save Staff</button>
         </div>
       {/* </div> */}
     </>

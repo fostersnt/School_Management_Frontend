@@ -42,16 +42,19 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 .sys-input, .sys-select{
   margin-bottom: 10px;
   height: 40px;
   padding-left: 8px;
   padding-right: 8px;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   font-size: 20px;
    transition: box-shadow 0.3s ease, border 0.3s ease;
-  /* color: #ec1846 !important; */
 }
 .sys-input:focus, .sys-select:focus{
   outline: none;
@@ -65,7 +68,7 @@ body::-webkit-scrollbar {
   color: #333;
   border: 1px solid #ccc;
   padding: 10px 20px;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -94,7 +97,17 @@ body::-webkit-scrollbar {
   color: #fff;
   border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 6px;
+  /* border-radius: 6px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sys-button-grey{
+  background-color: #eef0f3;
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* border-radius: 6px; */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);

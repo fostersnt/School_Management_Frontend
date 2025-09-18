@@ -1,7 +1,7 @@
 .add-staff-container{
   background-color: #fff;
   padding: 16px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .form-header{
@@ -16,7 +16,7 @@
    margin: 5px;
   padding: 5px;
   border: 1px solid #eee;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .tabs{
@@ -39,7 +39,7 @@
   background-color: var(--hover-bg-color);
   border: none;
   margin: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: #fff;
 }
 
@@ -55,7 +55,7 @@
   flex: 1;
   border: 1px solid #ddd;
   padding: 16px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: 10px;
 }
 .form-card h4{
@@ -74,7 +74,7 @@
 .full-width{
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #fff;
   /* width: 100%; */
   padding: 16px;
@@ -92,6 +92,8 @@
 .form-footer{
   display: flex;
   justify-content: flex-end;
+  background-color: #fff;
+  padding: 16px;
 }
 .form-footer button{
   margin: 5px;
