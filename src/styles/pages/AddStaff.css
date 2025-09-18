@@ -16,3 +16,28 @@
   border: 1px solid #eee;
   border-radius: 10px;
 }
+
+.tabs{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs button{
+  flex: 1;
+  background-color: #eef0f3;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+.tabs button:hover{
+  flex: 1;
+  background-color: #b3d0fa;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  cursor: pointer;
+}

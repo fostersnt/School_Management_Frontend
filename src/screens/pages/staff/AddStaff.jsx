@@ -5,6 +5,10 @@ const AddStaff = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [portalAccess, setPortalAccess] = useState(true);
 
+  const handleClick = () => {
+    console.log('Hello world');
+  }
+
   return (
     <div className="add-staff-container">
       {/* Header */}
@@ -71,18 +75,18 @@ const AddStaff = () => {
         <section className="form-card">
           <h4>Employment Details</h4>
           {/* <div className="two-cols"> */}
-            <input type="text" placeholder="e.g. Mathematics" />
-            <input type="text" placeholder="e.g. Teacher, Bursar" />
+          <input type="text" placeholder="e.g. Mathematics" />
+          <input type="text" placeholder="e.g. Teacher, Bursar" />
           {/* </div> */}
           <select>
             <option>Active</option>
             <option>On Leave</option>
           </select>
           {/* <div className="two-cols"> */}
-            <input type="date" placeholder="DD/MM/YYYY" />
-            <select>
-              <option>Select supervisor</option>
-            </select>
+          <input type="date" placeholder="DD/MM/YYYY" />
+          <select>
+            <option>Select supervisor</option>
+          </select>
           {/* </div> */}
           <input type="text" placeholder="Assign classes/streams" />
         </section>
