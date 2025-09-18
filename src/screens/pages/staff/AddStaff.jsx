@@ -109,7 +109,7 @@ const AddStaff = () => {
         </section>
 
         {/* Permissions */}
-        <section className="form-card full-width">
+        <section className="full-width">
           <h4>Permissions Quick Assign</h4>
           <div className="permission-row">
             <span>Teachers</span>

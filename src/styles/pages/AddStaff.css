@@ -54,8 +54,10 @@
 
 /* Form Layout */
 .form-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
   gap: 20px;
 }
 .form-card {
@@ -64,6 +66,7 @@
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  width: auto;
 }
 .form-card h4 {
   margin-bottom: 10px;
@@ -133,7 +136,13 @@
 
 /* Permissions */
 .full-width {
-  grid-column: span 2;
+  /* grid-column: span 2; */
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  width: 100%;
 }
 .permission-row {
   display: grid;
