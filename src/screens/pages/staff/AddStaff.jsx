@@ -43,14 +43,14 @@ const AddStaff = () => {
         {/* Personal Info */}
         <section className="form-card">
           <h4>Personal Information</h4>
-          <div className="two-cols">
+          {/* <div className="two-cols"> */}
             <input type="text" placeholder="e.g. Ama Boateng" />
             <input type="text" placeholder="Auto or enter manually" />
-          </div>
-          <div className="two-cols">
+          {/* </div> */}
+          {/* <div className="two-cols"> */}
             <input type="email" placeholder="name@school.edu" />
             <input type="text" placeholder="e.g. 024 123 4567" />
-          </div>
+          {/* </div> */}
           <input type="text" placeholder="Residential address" />
           <input type="text" placeholder="Name & phone" />
         </section>
@@ -70,20 +70,20 @@ const AddStaff = () => {
         {/* Employment */}
         <section className="form-card">
           <h4>Employment Details</h4>
-          <div className="two-cols">
+          {/* <div className="two-cols"> */}
             <input type="text" placeholder="e.g. Mathematics" />
             <input type="text" placeholder="e.g. Teacher, Bursar" />
-          </div>
+          {/* </div> */}
           <select>
             <option>Active</option>
             <option>On Leave</option>
           </select>
-          <div className="two-cols">
+          {/* <div className="two-cols"> */}
             <input type="date" placeholder="DD/MM/YYYY" />
             <select>
               <option>Select supervisor</option>
             </select>
-          </div>
+          {/* </div> */}
           <input type="text" placeholder="Assign classes/streams" />
         </section>
 
