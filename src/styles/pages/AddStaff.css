@@ -43,11 +43,12 @@
 .form-body{
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .form-card{
-  width: 50%;
+  /* width: 50%; */
+  min-width: 320px;
   flex: 1;
   border: 1px solid #ddd;
   padding: 16px;
@@ -65,4 +66,31 @@
 .two-cols input, .two-cols select{
   width: 50%;
   margin: 5px;
+}
+
+.full-width{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  /* width: 100%; */
+  padding: 16px;
+  /* gap: 20px; */
+  overflow-x: scroll;
+}
+.permission-row {
+  display: grid;
+  grid-template-columns: 120px 120px 1fr auto;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.form-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+.form-footer button{
+  margin: 5px;
+  padding: 5px;
 }

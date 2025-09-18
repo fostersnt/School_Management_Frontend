@@ -174,14 +174,14 @@
 }
 .tag.finance {
   background: #fff7e6;
-  color: #a65b00;
+  /* color: #a65b00; */
 }
 .tag.select {
   background: #f5f5f5;
   color: #555;
 }
 .btn-apply {
-  background: #facc15;
+  /* background: #facc15; */
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
