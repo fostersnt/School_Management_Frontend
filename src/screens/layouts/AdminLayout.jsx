@@ -41,33 +41,33 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item" onClick={() => handleMenuClick(1)}>
                             <div className="grouped_items">
-                                <MdChecklist className='icon' size={20} />
+                                <MdChecklist className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Administration</NavLink>
                             </div>
                         </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Staff</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Students</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Staff</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Students</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <HiOutlineAcademicCap className='icon' size={20} />
+                                <HiOutlineAcademicCap className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard' onClick={() => handleMenuClick(2)}>Academics</NavLink>
                             </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Calendar</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Classes</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Subjects</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Time-Table</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Calendar</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Classes</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Subjects</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Time-Table</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FiShield className='icon' size={20}/>
+                                <FiShield className='icon' size={20} color={'#fff'}/>
                                 <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <MdCreditCard className='icon' size={20} />
+                                <MdCreditCard className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Payments/Fees</NavLink>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FaBullhorn className='icon' size={20} />
+                                <FaBullhorn className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Announcements</NavLink>
                             </div>
                         </div>

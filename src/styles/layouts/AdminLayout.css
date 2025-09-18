@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    color: #0F172A;
 }
 /* Button color = #6366F1 */
 .layout_container{
@@ -20,7 +19,6 @@
     padding-top: 30px;
     width: 300px;
     padding-left: 10px;
-    color: #F8FAFC;
     border-right: 1px solid #d0d3d8;
 }
 
