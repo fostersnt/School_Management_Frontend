@@ -36,7 +36,7 @@
 
 .tabs button:hover{
   flex: 1;
-  background-color: #ec1846;
+  background-color: var(--hover-bg-color);
   border: none;
   margin: 5px;
   cursor: pointer;
