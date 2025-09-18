@@ -48,7 +48,6 @@ const AdminLayout = () => {
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Staff</NavLink></li>
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Students</NavLink></li>
-                            {/* <li className=""></li> */}
                         </div>
                     </div>
                     <div className="side_bar_menu">
@@ -63,7 +62,6 @@ const AdminLayout = () => {
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Classes</NavLink></li>
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Subjects</NavLink></li>
                             <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Time-Table</NavLink></li>
-                            {/* <li className=""></li> */}
                         </div>
                     </div>
                     <div className="side_bar_menu">

@@ -39,3 +39,15 @@
   margin: 5px;
   cursor: pointer;
 }
+.form-card{
+  width: 50%;
+  flex: 1;
+}
+.two-cols{
+  width: calc(100% - 10px);
+  display: flex;
+}
+.two-cols input{
+  width: 50%;
+  margin: 5px;
+}
