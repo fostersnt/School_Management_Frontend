@@ -49,16 +49,16 @@ const AddStaff = () => {
           <section className="form-card">
             <h4>Personal Information</h4>
             <div className="two-cols">
-              <input type="text" placeholder="e.g. Ama Boateng" />
-              <input type="text" placeholder="Auto or enter manually" />
+              <input className="sys-input" type="text" placeholder="e.g. Ama Boateng" />
+              <input className="sys-input" type="text" placeholder="Auto or enter manually" />
             </div>
             <div className="two-cols">
-              <input type="email" placeholder="name@school.edu" />
-              <input type="text" placeholder="e.g. 024 123 4567" />
+              <input className="sys-input" type="email" placeholder="name@school.edu" />
+              <input className="sys-input" type="text" placeholder="e.g. 024 123 4567" />
             </div>
             <div className="two-cols">
-              <input type="text" placeholder="Residential address" />
-              <input type="text" placeholder="Name & phone" />
+              <input className="sys-input" type="text" placeholder="Residential address" />
+              <input className="sys-input" type="text" placeholder="Name & phone" />
             </div>
           </section>
 
@@ -67,8 +67,8 @@ const AddStaff = () => {
             <h4>Profile Photo</h4>
             <div className="profile-photo">
               <div className="upload-box">
-                <button className="btn-upload">Upload</button>
-                <button className="btn-remove">Remove</button>
+                <button className="btn-upload sys-button">Upload</button>
+                <button className="btn-remove sys-button">Remove</button>
               </div>
               <p className="note">PNG or JPG, max 2MB</p>
             </div>
@@ -79,19 +79,19 @@ const AddStaff = () => {
           <section className="form-card">
             <h4>Employment Details</h4>
             <div className="two-cols">
-              <input type="text" placeholder="e.g. Mathematics" />
-              <input type="text" placeholder="e.g. Teacher, Bursar" />
+              <input className="sys-input" type="text" placeholder="e.g. Mathematics" />
+              <input className="sys-input" type="text" placeholder="e.g. Teacher, Bursar" />
             </div>
             <div className="two-cols">
-              <input type="date" placeholder="DD/MM/YYYY" />
-              <select>
+              <input className="sys-input" type="date" placeholder="DD/MM/YYYY" />
+              <select className="sys-select">
                 <option>Select supervisor</option>
               </select>
             </div>
             <div className="two-cols">
-              <input type="text" placeholder="Assign classes/streams" />
-              <select>
-                <option>Active</option>
+              <input className="sys-input" type="text" placeholder="Assign classes/streams" />
+              <select className="sys-select">
+                <option className="sys-option">Active</option>
                 <option>On Leave</option>
               </select>
             </div>

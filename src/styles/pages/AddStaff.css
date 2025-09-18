@@ -9,7 +9,9 @@
   display: flex;
   justify-content: space-between;
 }
-
+.form-header h2{
+  color: #ec1846;
+}
 .form-header div button{
    margin: 5px;
   padding: 5px;
@@ -34,10 +36,11 @@
 
 .tabs button:hover{
   flex: 1;
-  background-color: #b3d0fa;
+  background-color: #ec1846;
   border: none;
   margin: 5px;
   cursor: pointer;
+  color: #fff;
 }
 
 .form-body{
@@ -56,7 +59,7 @@
   margin: 10px;
 }
 .form-card h4{
-  color: #5f6061;
+  color: #ec1846;
   margin: 5px;
 }
 .two-cols{
