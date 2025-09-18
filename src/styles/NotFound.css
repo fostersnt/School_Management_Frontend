@@ -1,6 +1,6 @@
 /* Background */
 .notfound-container {
-  background: url('../assets/images/bg.jpg');
+  background: url('../assets/images/students_bg.png');
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
 
 /* Content box */
 .notfound-content {
-  background: #ec1846;
+  background: #fff;
   padding: 3rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -26,15 +26,15 @@
   font-size: 6rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  color: #fff;
-  text-shadow: 2px 4px 10px #ec1846;
+  color: #ec1846;
+  /* text-shadow: 2px 4px 10px #ec1846; */
 }
 
 /* Message */
 .notfound-message {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #f3f3f3;
+  color: #ec1846;
   font-weight: bold;
 }
 
