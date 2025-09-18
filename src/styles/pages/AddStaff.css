@@ -62,7 +62,7 @@
   width: calc(100% - 10px);
   display: flex;
 }
-.two-cols input{
+.two-cols input, .two-cols select{
   width: 50%;
   margin: 5px;
 }
