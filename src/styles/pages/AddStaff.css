@@ -1,32 +1,32 @@
-.add-staff-container{
+.add-staff-container {
   background-color: #fff;
   padding: 16px;
   /* border-radius: 20px; */
 }
 
-.form-header{
+.form-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.form-header h2{
+.form-header h2 {
   /* color: #ec1846; */
 }
-.form-header div button{
-   margin: 5px;
+.form-header div button {
+  margin: 5px;
   padding: 5px;
   border: 1px solid #eee;
   /* border-radius: 10px; */
 }
 
-.tabs{
+.tabs {
   margin-top: 20px;
   margin-bottom: 20px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
-.tabs button{
+.tabs button {
   flex: 1;
   background-color: #eef0f3;
   border: none;
@@ -34,7 +34,7 @@
   margin: 5px;
 }
 
-.tabs button:hover{
+.tabs button:hover {
   flex-grow: 1;
   background-color: var(--hover-bg-color);
   border: none;
@@ -43,13 +43,13 @@
   color: #fff;
 }
 
-.form-body{
+.form-body {
   flex-wrap: wrap;
   display: flex;
   /* justify-content: space-between; */
 }
 
-.form-card{
+.form-card {
   /* width: 50%; */
   min-width: 320px;
   flex: 1;
@@ -58,21 +58,22 @@
   /* border-radius: 10px; */
   margin: 10px;
 }
-.form-card h4{
+.form-card h4 {
   /* color: #ec1846; */
   margin: 5px;
 }
-.two-cols{
+.two-cols {
   width: calc(100% - 10px);
   display: flex;
 }
-.two-cols input, .two-cols select{
+.two-cols input,
+.two-cols select {
   width: 50%;
   margin: 5px;
   padding-left: 5px;
 }
 
-.full-width{
+.full-width {
   margin-top: 20px;
   margin-bottom: 20px;
   /* border-radius: 20px; */
@@ -90,20 +91,39 @@
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
-.form-footer{
+.form-footer {
   display: flex;
   justify-content: flex-end;
   background-color: #fff;
   padding: 16px;
 }
-.form-footer button{
+.form-footer button {
   margin: 5px;
   padding: 5px;
 }
 
-@media (max-width: 559px){
-  .tabs{
+@media (max-width: 541px) {
+  .tabs button {
+    background-color: red;
+    flex: 1;
+    /* width: 100% !important; */
+  }
+  .form-header{
     display: block;
-    flex-wrap: wrap;
+  }
+  .form-header h2 {
+    width: 100% !important;
+    /* color: #ec1846; */
+  }
+  .form-header div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-header div button {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #eee;
+    /* border-radius: 10px; */
   }
 }
