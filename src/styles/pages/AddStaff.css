@@ -1,11 +1,12 @@
 .add-staff-container {
   background-color: #fff;
   padding: 16px;
+  flex-grow: 1;
   /* border-radius: 20px; */
 }
 
 .form-header {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
@@ -20,14 +21,15 @@
 }
 
 .tabs {
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .tabs button {
-  flex: 1;
+  flex-grow: 1;
   background-color: #eef0f3;
   border: none;
   padding: 10px;
@@ -51,7 +53,7 @@
 
 .form-card {
   /* width: 50%; */
-  min-width: 320px;
+  min-width: 250px;
   flex: 1;
   border: 1px solid #ddd;
   padding: 16px;
@@ -85,7 +87,7 @@
 }
 .permission-row {
   display: grid;
-  grid-template-columns: 120px 120px 1fr auto;
+  /* grid-template-columns: 120px 120px 1fr auto; */
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
@@ -102,18 +104,19 @@
   padding: 5px;
 }
 
-@media (max-width: 541px) {
-  .tabs button {
-    background-color: red;
-    flex: 1;
-    /* width: 100% !important; */
+@media (max-width: 570px) {
+  .tabs {
+    /* display: block; */
   }
-  .form-header{
+  .tabs button {
+    /* flex: 1; */
+    /* width: 100%; */
+  }
+  .form-header {
     display: block;
   }
   .form-header h2 {
-    width: 100% !important;
-    /* color: #ec1846; */
+    width: 100%;
   }
   .form-header div {
     width: 100%;
@@ -124,6 +127,15 @@
     margin: 5px;
     padding: 5px;
     border: 1px solid #eee;
-    /* border-radius: 10px; */
+  }
+  .two-cols {
+  width: calc(100% - 10px);
+  display: block;
+}
+  .two-cols input,
+  .two-cols select {
+    width: 100%;
+    /* margin: 5px; */
+    /* padding-left: 5px; */
   }
 }

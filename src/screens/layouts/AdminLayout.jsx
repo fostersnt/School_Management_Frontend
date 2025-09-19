@@ -6,7 +6,7 @@ import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
 import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
 import { AiFillDashboard } from 'react-icons/ai';
-import { TbDashboard } from 'react-icons/tb';
+import { TbBoxMultiple0, TbCancel, TbClockShield, TbCross, TbDashboard, TbMenu2, TbX } from 'react-icons/tb';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import { FiArrowRight, FiMinus, FiPlus, FiShield } from 'react-icons/fi';
 import CustomFooter from '../components/CustomFooter';
@@ -14,6 +14,7 @@ import CustomFooter from '../components/CustomFooter';
 const AdminLayout = () => {
 
     let [activeMenu, setActiveMenu] = useState(0);
+    let [isVisible, setVisible]     = useState(false);
 
     const handleMenuClick = (value) => {
         let final_value = 0;
@@ -26,10 +27,17 @@ const AdminLayout = () => {
         setActiveMenu(final_value);
     }
 
+    const handleMenuButton = () => {
+
+    }
+
     return (
         <>
             <div className="layout_container">
                 <div className="side_bar">
+                    <div className={isVisible ? 'show-item' : 'hide-item'}>
+                        <TbX size={20} color={'#fff'} />
+                    </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
@@ -46,8 +54,8 @@ const AdminLayout = () => {
                             </div>
                         </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Staff</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Students</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Staff</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Students</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
@@ -58,16 +66,16 @@ const AdminLayout = () => {
                             </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Calendar</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Classes</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Subjects</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'}/>Time-Table</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Calendar</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Classes</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Subjects</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Time-Table</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FiShield className='icon' size={20} color={'#fff'}/>
+                                <FiShield className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
                             </div>
                         </div>
@@ -91,6 +99,7 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
+                        <TbMenu2 size={20} color={'#fff'} />
                         <span className="">Welcome, Foster Asante</span>
                         <div className="profile_image_container">
                             <img className='profile_image' src={profile_image} alt="" />
@@ -99,7 +108,7 @@ const AdminLayout = () => {
                     <div className="content">
                         <Outlet />
                     </div>
-                <CustomFooter/>
+                    <CustomFooter />
                 </div>
             </div>
         </>
