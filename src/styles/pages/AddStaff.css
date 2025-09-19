@@ -35,11 +35,11 @@
 }
 
 .tabs button:hover{
-  flex: 1;
+  flex-grow: 1;
   background-color: var(--hover-bg-color);
   border: none;
   margin: 5px;
-  /* cursor: pointer; */
+  cursor: pointer;
   color: #fff;
 }
 
@@ -69,6 +69,7 @@
 .two-cols input, .two-cols select{
   width: 50%;
   margin: 5px;
+  padding-left: 5px;
 }
 
 .full-width{
@@ -98,4 +99,11 @@
 .form-footer button{
   margin: 5px;
   padding: 5px;
+}
+
+@media (max-width: 559px){
+  .tabs{
+    display: block;
+    flex-wrap: wrap;
+  }
 }

@@ -3,6 +3,7 @@
 :root{
   --primary-color: #ec1846;
   --primary-bg-color: #f54067;
+  --primary-bg-color-grey: #ccc;
   --hover-bg-color: #f54067;
 }
 
@@ -42,15 +43,32 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-button:hover{
+.disabled{
+  background-color: var(--primary-bg-color-grey);
+  border: 1px solid #ccc;
+  padding: 5px;
+  /* border-radius: 6px; */
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.enabled{
+  background-color: var(--primary-bg-color);
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  /* border-radius: 6px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .sys-input, .sys-select{
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   height: 40px;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px; */
+  /* padding-right: 8px; */
   border: 1px solid #ddd;
   /* border-radius: 6px; */
   font-size: 20px;
@@ -66,8 +84,8 @@ button:hover{
 .sys-button {
   background-color: #ffffff;
   color: #333;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
+  border: 1px solid var(--primary-bg-color-grey);
+  padding: 5px;
   /* border-radius: 6px; */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -96,7 +114,7 @@ button:hover{
   background-color: var(--primary-bg-color);
   color: #fff;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 5px;
   /* border-radius: 6px; */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -105,7 +123,7 @@ button:hover{
 
 .sys-button-grey{
   background-color: #eef0f3;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary-bg-color-grey);
   padding: 10px;
   /* border-radius: 6px; */
   cursor: pointer;
