@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import "../../../styles/pages/AddStaff.css";
+import ImageUploading from 'react-images-uploading';
 
 const AddStaff = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [portalAccess, setPortalAccess] = useState(true);
+
+  const [images, setImages] = useState([]);
+  const maxNumber = 5;
+
+  const onChange = (imageList) => {
+    setImages(imageList);
+  };
 
   const handleClick = () => {
     console.log('Hello world');
@@ -95,6 +103,24 @@ const AddStaff = () => {
                 <option>On Leave</option>
               </select>
             </div>
+            <ImageUploading
+              multiple
+              value={images}
+              onChange={onChange}
+              maxNumber={maxNumber}
+              dataURLKey="data_url"
+            >
+              {({ imageList, onImageUpload }) => (
+                <div>
+                  <button onClick={onImageUpload}>Upload Image</button>
+                  <div>
+                    {imageList.map((image, index) => (
+                      <img key={index} src={image.data_url} alt="" width="100" />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </ImageUploading>
           </section>
 
           {/* Account Access */}
@@ -120,36 +146,36 @@ const AddStaff = () => {
         </div>
       </div>
       {/* <div className="form-body"> */}
-        <div className="permissions-container">
-          {/* Permissions */}
-          <section className="full-width">
-            <h4>Permissions Quick Assign</h4>
-            <div className="permission-row">
-              <span>Teachers</span>
-              <span className="tag standard">Standard</span>
-              <span>Gradebook, attendance, announcements</span>
-              <button className="sys-button-colored">Apply</button>
-            </div>
-            <div className="permission-row">
-              <span>Bursars</span>
-              <span className="tag finance">Finance</span>
-              <span>Billing, payments, reconciliation</span>
-              <button className="sys-button-colored">Apply</button>
-            </div>
-            <div className="permission-row">
-              <span>Custom</span>
-              <span className="tag select">Select...</span>
-              <span>Choose specific permissions</span>
-              <button className="sys-button-colored">Manage</button>
-            </div>
-          </section>
-        </div>
+      <div className="permissions-container">
+        {/* Permissions */}
+        <section className="full-width">
+          <h4>Permissions Quick Assign</h4>
+          <div className="permission-row">
+            <span>Teachers</span>
+            <span className="tag standard">Standard</span>
+            <span>Gradebook, attendance, announcements</span>
+            <button className="sys-button-colored">Apply</button>
+          </div>
+          <div className="permission-row">
+            <span>Bursars</span>
+            <span className="tag finance">Finance</span>
+            <span>Billing, payments, reconciliation</span>
+            <button className="sys-button-colored">Apply</button>
+          </div>
+          <div className="permission-row">
+            <span>Custom</span>
+            <span className="tag select">Select...</span>
+            <span>Choose specific permissions</span>
+            <button className="sys-button-colored">Manage</button>
+          </div>
+        </section>
+      </div>
 
-        {/* Footer Buttons */}
-        <div className="form-footer">
-          <button className="sys-button-grey">Cancel</button>
-          <button className="sys-button-colored">Save Staff</button>
-        </div>
+      {/* Footer Buttons */}
+      <div className="form-footer">
+        <button className="sys-button-grey">Cancel</button>
+        <button className="sys-button-colored">Save Staff</button>
+      </div>
       {/* </div> */}
     </>
   );
