@@ -30,7 +30,7 @@ const AdminLayout = () => {
 
     const handleMenuButtonClick = () => {
         if (hideBar == 'side_bar') {
-            setHideBar('');
+            setHideBar('reduce-side-bar-width');
         } else {
             setHideBar('side_bar');
         }
@@ -40,8 +40,8 @@ const AdminLayout = () => {
         <>
             <div className="layout_container">
                 <div className={hideBar}>
-                    <div className={isVisible ? 'show-item' : 'hide-item'}>
-                        <TbX size={20} color={'#fff'} />
+                    <div className='sidebar-close-btn'>
+                        <TbX size={20} color={'#fff'} onClick={handleMenuButtonClick}/>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">

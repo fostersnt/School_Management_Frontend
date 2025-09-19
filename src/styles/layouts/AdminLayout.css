@@ -4,6 +4,7 @@
 }
 /* Button color = #6366F1 */
 .layout_container {
+  /* width: 100vw; */
   /* min-height: 100vh;
     max-width: 100vw; */
   background-color: #eef0f3;
@@ -11,7 +12,7 @@
   justify-content: flex-start;
   padding: 0px;
   /* margin: 10px; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .hide-item {
@@ -23,7 +24,13 @@
 }
 
 .reduce-side-bar-width {
-  margin-left: -300px;
+  width: 300px;
+  position: absolute;
+  background-color: var(--primary-bg-color);
+  padding-left: 10px;
+  /* overflow: hidden; */
+  transition: width 0.3s ease;
+  /* transition: visibility 0.3s ease; */
 }
 /* .set-side-bar-width {
   margin-left: 300px;
@@ -31,11 +38,11 @@
 
 .side_bar {
   background-color: var(--primary-bg-color);
-  padding-top: 10px;
-  margin-left: 0px;
-  width: 300px;
+  /* margin-left: 0px; */
+  width: 250px;
   padding-left: 10px;
   border-right: 1px solid #d0d3d8;
+  transition: width 0.3s ease;
   /* height: 100vh; */
   /* position: relative; */
 }
@@ -72,7 +79,8 @@
 }
 
 .main {
-  /* width: calc(100% - 300px); */
+  max-width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   /* flex-grow: 1; */
@@ -107,6 +115,7 @@
 
 .side-bar-menu-btn {
   cursor: pointer;
+  display: none;
 }
 
 .profile_image_container {
@@ -137,12 +146,29 @@ li {
   margin-left: 20px;
 }
 
+.menu-icon {
+  display: none;
+}
+
+.sidebar-close-btn {
+  visibility: hidden;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 830px) {
   .side_bar {
+    width: 0;
+    margin-left: -10px;
+    overflow: hidden;
     position: absolute;
+  }
+
+  .side-bar-menu-btn {
+    display: block;
   }
   .sidebar-close-btn {
     width: 100%;
+    visibility: visible;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;

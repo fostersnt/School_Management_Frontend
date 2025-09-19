@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import '../../styles/AdminLayout.css'
-import profile_image from '../../assets/images/bg.jpg';
+import '../../styles/layouts/AdminLayout.css'
+import profile_image from '../../assets/images/students_bg.png';
 import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/fa';
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
 import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
 import { AiFillDashboard } from 'react-icons/ai';
-import { TbDashboard } from 'react-icons/tb';
+import { TbBoxMultiple0, TbCancel, TbClockShield, TbCross, TbDashboard, TbMenu2, TbX } from 'react-icons/tb';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import { FiArrowRight, FiMinus, FiPlus, FiShield } from 'react-icons/fi';
 import CustomFooter from '../components/CustomFooter';
@@ -14,6 +14,8 @@ import CustomFooter from '../components/CustomFooter';
 const AdminLayout = () => {
 
     let [activeMenu, setActiveMenu] = useState(0);
+    let [isVisible, setVisible]     = useState(false);
+    let [hideBar, setHideBar]     = useState('side_bar');
 
     const handleMenuClick = (value) => {
         let final_value = 0;
@@ -26,14 +28,25 @@ const AdminLayout = () => {
         setActiveMenu(final_value);
     }
 
+    const handleMenuButtonClick = () => {
+        if (hideBar == 'side_bar') {
+            setHideBar('reduce-side-bar-width');
+        } else {
+            setHideBar('side_bar');
+        }
+    }
+
     return (
         <>
             <div className="layout_container">
-                <div className="side_bar">
+                <div className={hideBar}>
+                    <div className={isVisible ? 'show-item' : 'hide-item'}>
+                        <TbX size={20} color={'#fff'} />
+                    </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <TbDashboard className='icon' size={20} color={'#4F46E5'} />
+                                <TbDashboard className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Dashboard</NavLink>
                             </div>
                         </div>
@@ -41,35 +54,33 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item" onClick={() => handleMenuClick(1)}>
                             <div className="grouped_items">
-                                <MdChecklist className='icon' size={20} />
-                                <span className="">Administration</span>
+                                <MdChecklist className='icon' size={20} color={'#fff'} />
+                                <NavLink className='nav-link' to='/admin/dashboard'>Administration</NavLink>
                             </div>
                         </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Staff</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Students</NavLink></li>
-                            {/* <li className=""></li> */}
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Staff</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Students</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <HiOutlineAcademicCap className='icon' size={20} />
-                                <span className="" onClick={() => handleMenuClick(2)}>Academics</span>
+                                <HiOutlineAcademicCap className='icon' size={20} color={'#fff'} />
+                                <NavLink className='nav-link' to='/admin/dashboard' onClick={() => handleMenuClick(2)}>Academics</NavLink>
                             </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Calendar</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Classes</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Subjects</NavLink></li>
-                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15}/>Time-Table</NavLink></li>
-                            {/* <li className=""></li> */}
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Calendar</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Classes</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Subjects</NavLink></li>
+                            <li className=""><NavLink className='nav-link' to='/admin/all-staff'><FiMinus size={15} color={'#fff'} />Time-Table</NavLink></li>
                         </div>
                     </div>
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FiShield className='icon' size={20}/>
+                                <FiShield className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Roles & Permissions</NavLink>
                             </div>
                         </div>
@@ -77,7 +88,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <MdCreditCard className='icon' size={20} />
+                                <MdCreditCard className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Payments/Fees</NavLink>
                             </div>
                         </div>
@@ -85,7 +96,7 @@ const AdminLayout = () => {
                     <div className="side_bar_menu">
                         <div className="menu_item">
                             <div className="grouped_items">
-                                <FaBullhorn className='icon' size={20} />
+                                <FaBullhorn className='icon' size={20} color={'#fff'} />
                                 <NavLink className='nav-link' to='/admin/dashboard'>Announcements</NavLink>
                             </div>
                         </div>
@@ -93,6 +104,7 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
+                        <TbMenu2 className='side-bar-menu-btn' onClick={handleMenuButtonClick} size={20} color={'#fff'} />
                         <span className="">Welcome, Foster Asante</span>
                         <div className="profile_image_container">
                             <img className='profile_image' src={profile_image} alt="" />
@@ -101,7 +113,7 @@ const AdminLayout = () => {
                     <div className="content">
                         <Outlet />
                     </div>
-                <CustomFooter/>
+                    <CustomFooter />
                 </div>
             </div>
         </>

@@ -1,110 +1,150 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    color: #0F172A;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 /* Button color = #6366F1 */
-.layout_container{
-    min-height: 100vh;
-    max-width: 100vw;
-    background-color: #eef0f3;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0px;
-    /* margin: 10px; */
-    overflow-x: hidden;
+.layout_container {
+  /* min-height: 100vh;
+    max-width: 100vw; */
+  background-color: #eef0f3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  /* margin: 10px; */
+  overflow-x: hidden;
 }
 
-.side_bar{
-    background-color: #ffffff;
-    padding-top: 30px;
-    width: 300px;
-    padding-left: 10px;
-    color: #F8FAFC;
-    border-right: 1px solid #d0d3d8;
+.hide-item {
+  display: none;
 }
 
-.side_bar_menu .menu_item{
-    color: #0F172A;
+.show-item {
+  display: block;
 }
 
-.menu_item{
+.reduce-side-bar-width {
+  margin-left: -220px;
+}
+/* .set-side-bar-width {
+  margin-left: 300px;
+} */
+
+.side_bar {
+  background-color: var(--primary-bg-color);
+  padding-top: 10px;
+  margin-left: 0px;
+  width: 300px;
+  padding-left: 10px;
+  border-right: 1px solid #d0d3d8;
+  /* height: 100vh; */
+  /* position: relative; */
+}
+
+.side_bar_menu .menu_item {
+  /* color: #0F172A; */
+}
+
+.menu_item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.grouped_items {
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.side_bar_menu {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  /* color: #334155; */
+  display: flex;
+  align-items: center;
+  /* margin-left: 20px; */
+  /* font-weight: bold; */
+}
+
+.main {
+  /* width: calc(100% - 300px); */
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+}
+
+.content {
+  background-color: #eef0f3;
+  /* height: 100%; */
+  margin: 20px;
+  /* padding: 20px; */
+  flex-grow: 1;
+  /* background: url('../../assets/images/students_bg.png'); */
+  /* background-size: cover; */
+}
+
+.top_header {
+  /* width: 100%; */
+  /* margin-bottom: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 20px; */
+  border-bottom: 1px solid #d0d3d8;
+}
+.top_header span {
+  color: #fff;
+}
+
+.side-bar-menu-btn {
+  cursor: pointer;
+}
+
+.profile_image_container {
+  /* height: 100% !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.display_sidebar_item {
+  display: block;
+  /* background-color: #fff; */
+}
+
+.hide_sidebar_item {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 830px) {
+  .side_bar {
+    position: absolute;
+  }
+  .sidebar-close-btn {
     width: 100%;
-    cursor: pointer;
-}
-
-.grouped_items{
     display: flex;
-}
-
-.icon{
-    margin-right: 10px;
-}
-
-.side_bar_menu{
+    justify-content: flex-end;
     margin-bottom: 20px;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: #334155;
-    display: flex;
-    align-items: center;
-    /* margin-left: 20px; */
-}
-
-.main{
-    width: calc(100% - 300px);
-    display: flex;
-    flex-direction: column;
-}
-
-.content{
-    background-color: #eef0f3;
-    /* height: 100%; */
-    margin-bottom: 20px;
-    padding: 20px;
-    flex: 1;
-}
-
-.top_header{
-    /* width: 100%; */
-    /* margin-bottom: 10px; */
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 80px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border-radius: 20px; */
-    border-bottom: 1px solid #d0d3d8;
-}
-
-.profile_image_container{
-    /* height: 100% !important; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile_image{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.display_sidebar_item{
-    display: block;
-    /* background-color: #fff; */
-}
-
-.hide_sidebar_item{
-    display: none;
-}
-
-li{
-    list-style-type: none;
-    margin-top: 10px;
-    margin-left: 20px;
+  }
 }
