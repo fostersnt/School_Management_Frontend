@@ -99,7 +99,7 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
-                        <TbMenu2 size={20} color={'#fff'} />
+                        <TbMenu2 className='side-bar-menu-btn' size={20} color={'#fff'} />
                         <span className="">Welcome, Foster Asante</span>
                         <div className="profile_image_container">
                             <img className='profile_image' src={profile_image} alt="" />

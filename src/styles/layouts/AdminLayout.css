@@ -14,12 +14,16 @@
   overflow-x: hidden;
 }
 
-.hide-item{
-    display: none;
+.hide-item {
+  display: none;
 }
 
-.show-item{
-    display: block;
+.show-item {
+  display: block;
+}
+
+.reduce-side-bar-width {
+  margin-left: -310px;
 }
 
 .side_bar {
@@ -96,6 +100,11 @@
 .top_header span {
   color: #fff;
 }
+
+.side-bar-menu-btn {
+  cursor: pointer;
+}
+
 .profile_image_container {
   /* height: 100% !important; */
   display: flex;
@@ -127,7 +136,6 @@ li {
 @media (max-width: 830px) {
   .side_bar {
     position: absolute;
-    margin-left: -310px;
   }
   .sidebar-close-btn {
     width: 100%;
