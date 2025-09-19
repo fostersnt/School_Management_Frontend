@@ -24,7 +24,7 @@
 }
 
 .reduce-side-bar-width {
-  width: 300px;
+  width: 200px;
   position: absolute;
   background-color: var(--primary-bg-color);
   padding-left: 10px;
@@ -39,7 +39,7 @@
 .side_bar {
   background-color: var(--primary-bg-color);
   /* margin-left: 0px; */
-  width: 250px;
+  width: 200px;
   padding-left: 10px;
   border-right: 1px solid #d0d3d8;
   transition: width 0.3s ease;

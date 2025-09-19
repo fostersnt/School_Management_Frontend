@@ -5,6 +5,8 @@
   --primary-bg-color: #f54067;
   --primary-bg-color-grey: #ccc;
   --hover-bg-color: #f54067;
+  --system-font-size-normal: 0.9rem;
+  --system-font-size-small: 0.5rem;
 }
 
 h1,
@@ -20,13 +22,6 @@ a,
 div,button, input, select {
   font-family: "Josefin Slab", serif;
   font-style: normal;
-}
-
-span,
-p,
-div,
-li,button {
-  font-size: 1.5rem;
 }
 
 /* Firefox */
@@ -65,13 +60,10 @@ body::-webkit-scrollbar {
 }
 
 .sys-input, .sys-select{
-  /* margin-bottom: 10px; */
   height: 40px;
-  /* padding-left: 8px; */
-  /* padding-right: 8px; */
   border: 1px solid #ddd;
   /* border-radius: 6px; */
-  font-size: 18px;
+  font-size: var(--system-font-size-normal);
    transition: box-shadow 0.3s ease, border 0.3s ease;
 }
 .sys-input{
