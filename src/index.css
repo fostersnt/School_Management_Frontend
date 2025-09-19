@@ -71,8 +71,11 @@ body::-webkit-scrollbar {
   /* padding-right: 8px; */
   border: 1px solid #ddd;
   /* border-radius: 6px; */
-  font-size: 20px;
+  font-size: 18px;
    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+.sys-input{
+  padding-left: 5px;
 }
 .sys-input:focus, .sys-select:focus{
   outline: none;

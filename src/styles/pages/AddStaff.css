@@ -69,15 +69,15 @@
 .two-cols {
   /* width: calc(100% - 10px); */
   display: flex;
-  column-gap: 10px;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 .two-cols input,
 .two-cols select {
-  width: 50%;
-  /* margin: 5px; */
-  padding-left: 5px;
+  width: 48%;
+  margin-bottom: 5px;
 }
+
 
 .full-width {
   margin-top: 20px;
