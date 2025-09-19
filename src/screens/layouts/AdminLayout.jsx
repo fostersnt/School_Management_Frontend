@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import '../../styles/layouts/AdminLayout.css'
-import profile_image from '../../assets/images/bg.jpg';
+import profile_image from '../../assets/images/students_bg.png';
 import { FaBullhorn, FaCreditCard, FaLock, FaSchool, FaUser } from 'react-icons/fa';
 import { FaGauge, FaListCheck, FaShieldHalved } from 'react-icons/fa6';
 import { MdChecklist, MdCreditCard, MdDashboardCustomize, MdOutlineDashboard, MdSchool, MdSpaceDashboard } from 'react-icons/md';
