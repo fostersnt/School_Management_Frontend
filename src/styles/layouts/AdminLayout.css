@@ -152,7 +152,7 @@ li {
 
 .sidebar-close-btn {
   visibility: hidden;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 @media (max-width: 830px) {
