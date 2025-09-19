@@ -15,6 +15,7 @@ const AdminLayout = () => {
 
     let [activeMenu, setActiveMenu] = useState(0);
     let [isVisible, setVisible]     = useState(false);
+    let [hideBar, setHideBar]     = useState('side_bar');
 
     const handleMenuClick = (value) => {
         let final_value = 0;
@@ -27,14 +28,18 @@ const AdminLayout = () => {
         setActiveMenu(final_value);
     }
 
-    const handleMenuButton = () => {
-
+    const handleMenuButtonClick = () => {
+        if (hideBar == 'side_bar') {
+            setHideBar('');
+        } else {
+            setHideBar('side_bar');
+        }
     }
 
     return (
         <>
             <div className="layout_container">
-                <div className="side_bar">
+                <div className={hideBar}>
                     <div className={isVisible ? 'show-item' : 'hide-item'}>
                         <TbX size={20} color={'#fff'} />
                     </div>
@@ -99,7 +104,7 @@ const AdminLayout = () => {
                 </div>
                 <div className="main">
                     <div className="top_header">
-                        <TbMenu2 className='side-bar-menu-btn' size={20} color={'#fff'} />
+                        <TbMenu2 className='side-bar-menu-btn' onClick={handleMenuButtonClick} size={20} color={'#fff'} />
                         <span className="">Welcome, Foster Asante</span>
                         <div className="profile_image_container">
                             <img className='profile_image' src={profile_image} alt="" />

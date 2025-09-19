@@ -23,12 +23,16 @@
 }
 
 .reduce-side-bar-width {
-  margin-left: -310px;
+  margin-left: -300px;
 }
+/* .set-side-bar-width {
+  margin-left: 300px;
+} */
 
 .side_bar {
   background-color: var(--primary-bg-color);
   padding-top: 10px;
+  margin-left: 0px;
   width: 300px;
   padding-left: 10px;
   border-right: 1px solid #d0d3d8;
