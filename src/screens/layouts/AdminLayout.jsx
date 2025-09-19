@@ -55,7 +55,7 @@ const AdminLayout = () => {
                         <div className="menu_item" onClick={() => handleMenuClick(1)}>
                             <div className="grouped_items">
                                 <MdChecklist className='icon' size={20} color={'#fff'} />
-                                <NavLink className='nav-link' to='/admin/dashboard'>Administration</NavLink>
+                                <span className='nav-link' to='/admin/dashboard'>Administration</span>
                             </div>
                         </div>
                         <div className={activeMenu === 1 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
@@ -67,7 +67,7 @@ const AdminLayout = () => {
                         <div className="menu_item">
                             <div className="grouped_items">
                                 <HiOutlineAcademicCap className='icon' size={20} color={'#fff'} />
-                                <NavLink className='nav-link' to='/admin/dashboard' onClick={() => handleMenuClick(2)}>Academics</NavLink>
+                                <span className='nav-link' to='/admin/dashboard' onClick={() => handleMenuClick(2)}>Academics</span>
                             </div>
                         </div>
                         <div className={activeMenu === 2 ? 'display_sidebar_item' : 'hide_sidebar_item'}>
