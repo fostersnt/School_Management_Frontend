@@ -24,6 +24,7 @@ const AdminLayout = () => {
         } else if (activeMenu != value) {
             final_value = value;
         }
+
         // const final_value = activeMenu == 0 ? value : 0;
         setActiveMenu(final_value);
     }
